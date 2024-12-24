@@ -24,13 +24,21 @@ label {
     display: block;
 }
 
-input {
+input, select {
     width: calc(100% - 12px); 
     padding: 10px;
     margin: 5px 0 15px 0; 
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-right: 10px; 
+    margin-right: 10px;
+}
+
+select {
+    background-color: white;
+    -webkit-appearance: none;  /* Removes default dropdown arrow in WebKit browsers */
+    -moz-appearance: none;     /* Removes default dropdown arrow in Firefox */
+    appearance: none;          /* Removes default dropdown arrow */
+    cursor: pointer;
 }
 
 button {
